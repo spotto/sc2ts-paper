@@ -846,7 +846,7 @@ of related lineages within a major VOC in the Viridian dataset.
 Alongside the case numbers,
 the black curve shows the number of recombinants
 inferred within each week along the ARG,
-focusing on the 647 events passing QC filters.
+focusing on the 647 events passing QC filters, 552 of which fell within the time span of the COVID-19 Data Repository.
 Recombination events were inferred more often
 during the Delta and Omicron waves, when case counts were high.
 Overall, the number of inferred recombination events rose with the global case count
@@ -864,13 +864,13 @@ difficult to detect (\supref{sec:synthetic_recombinants},
 
 We then asked which single measure best explains
 the number of recombination events inferred each week,
-considering $n$, $H$, $n H$, $n^2$, $n^2 H$.
+considering $n$, $H$, $n \; H$, $n^2$, $n^2 H$.
 We included the squared number of cases each week
 thinking that it might better predict co-infections.
 The best single predictor of recombination events involved
-the product of cases and expected heterozygosity ($n H$),
+the product of cases and expected heterozygosity ($n \; H$),
 with an adjusted $R^2$ of 34.4\%.
-This measure of case diversity ($n H$)
+This measure of case diversity ($n \; H$)
 explained 32\% more of the variation in recombination events per week
 than the next best predictor ($n$, adjusted $R^2$ of 26.0\%).
 While consistent with the hypotheses
@@ -2447,8 +2447,8 @@ in \textit{Mathematica} 14.2 (Wolfram 2024) and
 available at
 \url{https://github.com/jeromekelleher/sc2ts-paper/blob/main/notebooks/TemporalTrends\_RecEvent19October2026.nb}.
 
-In addition to the analysis of the 647 recombination events that pass QC,
-we analyzed the relationship between the full set of 1320 single-breakpoint recombinants and case numbers.
+In addition to the analysis of the 552 recombination events that pass QC and were in the time window of the COVID-19 Data Repository,
+we analyzed the relationship between the 1174 recombination events falling within this time window from the full set of 1320 single-breakpoint recombinants and case numbers.
 These additional recombinants occurred disproportionately
 during the Delta and first Omicron wave (July, 2021 to February, 2022).
 Again, the number of recombinant events rose with the global case count
@@ -2461,9 +2461,7 @@ was again the product of cases and diversity ($n \; H$),
 with an adjusted $R^2$ of 34.3\%,
 followed by expected heterozygosity on its own ($H$),
 with an adjusted $R^2$ of 26.6\%.
-Thus, similar conclusions are reached with either dataset,
-although filtering the recombination events to the 647
-with better support revealed a stronger relationship with case numbers.
+Thus, similar conclusions are reached with either dataset.
 
 
 \bigskip
